@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { Copyright } from "@mui/icons-material";
 
 export const Footer: FunctionComponent = () => {
     return (
@@ -25,10 +24,15 @@ export const Footer: FunctionComponent = () => {
                     </Grid>
                     <Grid alignSelf={'flex-end'} flexDirection={'column'}>
                         <Grid>
-                            <a>Privacy policy</a>
+                            <a target={'_self'} style={{ color: '#464646', textDecoration: 'none' }} href={'/policy'}>Privacy
+                                policy</a>
                         </Grid>
                         <Grid>
-                            <a>Terms and conditions</a>
+                            <a target={'_self'} style={{ color: '#464646', textDecoration: 'none' }} href={'/terms'}>Terms
+                                and conditions</a>
+                        </Grid>
+                        <Grid>
+                            <a target={'_self'} style={{ color: '#464646', textDecoration: 'none' }} href={'/terms'}>Jobs</a>
                         </Grid>
                     </Grid>
                 </Grid>

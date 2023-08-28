@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Box, Container, createTheme, CssBaseline, Grid, ThemeProvider, Typography } from "@mui/material";
-import { Copyright } from "@mui/icons-material";
+import { Box, createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Content } from "./components/Content";
