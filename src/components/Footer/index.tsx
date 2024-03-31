@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export const Footer: FunctionComponent = () => {
     return (
@@ -19,20 +20,21 @@ export const Footer: FunctionComponent = () => {
                 <Grid container flexDirection='row'>
                     <Grid flex={5}>
                         <Typography variant="body1">
-                            ScrapBook 2023
+                            © LITTLE SCRAPBOOK 2023
+                        </Typography>
+                        <Typography variant="body1">
+                            abn: 71 754 158 053
                         </Typography>
                     </Grid>
                     <Grid alignSelf={'flex-end'} flexDirection={'column'}>
                         <Grid>
-                            <a target={'_self'} style={{ color: '#464646', textDecoration: 'none' }} href={'/policy'}>Privacy
-                                policy</a>
+                            <Link style={{color: '#656565', textDecoration: 'none'}} to='/about'>About</Link>
                         </Grid>
                         <Grid>
-                            <a target={'_self'} style={{ color: '#464646', textDecoration: 'none' }} href={'/terms'}>Terms
-                                and conditions</a>
+                            <Link style={{color: '#656565', textDecoration: 'none'}} to='/privacy'>Privacy Policy</Link>
                         </Grid>
                         <Grid>
-                            <a target={'_self'} style={{ color: '#464646', textDecoration: 'none' }} href={'/terms'}>Jobs</a>
+                            <Link style={{color: '#656565', textDecoration: 'none'}} to='/terms'>Terms and Conditions</Link>
                         </Grid>
                     </Grid>
                 </Grid>
